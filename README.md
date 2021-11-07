@@ -1,6 +1,6 @@
 # rust-draft
 
-#### Random Rust examples
+#### Random Rust examples with minimum add ons.
 
 ## Run
 ``$ cargo run``
