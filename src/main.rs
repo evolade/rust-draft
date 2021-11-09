@@ -216,7 +216,6 @@ fn fib_seq(_times: u16) -> Vec<u16> {
 
     for _i in 0.._times {
         _res = _fib_seq[_first] + _fib_seq[_second]; // doing the actual fibonacci thing
-        //println!("{} - {}", _i + 3, _res);
         _fib_seq.push(_res);
         _first += 1;
         _second += 1;
