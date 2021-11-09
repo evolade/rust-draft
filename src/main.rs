@@ -4,7 +4,7 @@ fn main() {
     println!("EVOLADE IS THE BEST");
     
     // example
-    //println!("{:?}", fizzbuzz(30)); 
+    //println!("{:?}", fib_seq(20)); 
 }
 
 // a game you prolly already know, if a number can divisible by 3 you say fizz
@@ -208,21 +208,20 @@ fn find_index(_arr: Vec<&str>, _target: &str) -> u16{
 // prints Fibonacci Sequence
 // it cant return multiple integers so it just prints it
 // fib_seq(15); => "<fibonacci sequence>"
-fn fib_seq(_times: u16) {
+fn fib_seq(_times: u16) -> Vec<u16> {
     let mut _fib_seq: Vec<u16> = vec![0, 1]; // I have to declare first and second before the loop
     let mut _first: usize = 1;
     let mut _second: usize = 0;
     let mut _res: u16;
-    
-    println!("1 - 0 \n2 - 1");
 
     for _i in 0.._times {
         _res = _fib_seq[_first] + _fib_seq[_second]; // doing the actual fibonacci thing
-        println!("{} - {}", _i + 3, _res);
+        //println!("{} - {}", _i + 3, _res);
         _fib_seq.push(_res);
         _first += 1;
         _second += 1;
     }
+    return _fib_seq;
 }
 
 // takes power
