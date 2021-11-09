@@ -4,7 +4,28 @@ fn main() {
     println!("EVOLADE IS THE BEST");
     
     // example
-    //println!("{}", anagram("rust", "ruts"));
+    //println!("{}", anagram("rust", "ruts")); 
+}
+
+// a game you prolly already know, if a number can divisible by 3 you say fizz
+// if a number can divisible by 5 you say buzz
+// if its both you say fizzbuzz
+// fizzbuzz(30); => "<result>""
+fn fizzbuzz(_reps: u8) {
+    for _i in 1.._reps {
+        if _i % 3 == 0 && _i % 5 == 0 {
+            println!("FIZZBUZZ");
+        }
+        else if _i % 3 == 0 {
+            println!("FIZZ");
+        }
+        else if _i % 5 == 0 {
+            println!("BUZZ");
+        }
+        else {
+            println!("{}", _i);
+        }
+    }
 }
 
 // anagram("rust", "ruts"); => true
