@@ -1,5 +1,4 @@
-// prints Fibonacci Sequence
-// it cant return multiple integers so it just prints it
+// returns Fibonacci Sequence as Vec<u32>
 // fib_seq(15); => "<fibonacci sequence>"
 pub fn fib_seq(_times: u8) -> Vec<u32> {
     let mut _fib_seq: Vec<u32> = vec![0, 1]; // I have to declare first and second before the loop
